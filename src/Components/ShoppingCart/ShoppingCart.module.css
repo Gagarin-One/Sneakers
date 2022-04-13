@@ -95,7 +95,7 @@ margin: 30px;
 
 }
 .ShoppingCartWrapper{
-  position: fixed;
+  position: flex;
   width:385px;
   height: 100vh;
   background: #FFFFFF;
@@ -103,10 +103,11 @@ margin: 30px;
   right: 0px;
   top: 0px;
   z-index: 1;
+  justify-content: space-between;
 }
 
 .ShoppingCartWrapper .items{
-  height:65vh;
+  height:50vh;
   overflow:auto;
   margin-bottom: 20px;
 }
@@ -182,5 +183,6 @@ color: #FFFFFF;
   width:13px;
 }
 .BottomBlock{
-  
+  position:fixed;
+  bottom:20px;
 }
