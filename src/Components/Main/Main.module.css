@@ -1,0 +1,35 @@
+.MainWrapper{
+  padding-top: 30px;
+}
+.MainWrapper input {
+border: 1px solid #F3F3F3;
+box-sizing: border-box;
+border-radius: 10px;
+width: 250px;
+height: 45px;
+}
+.MainWrapper b{
+  font-size:32px;
+}
+.MainHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ItemsWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 20px 75px 65px;
+ align-content: flex-start;
+  
+}
+.MainHeader input{
+  padding: 15px;
+  font-size: 16px;
+line-height: 17px;
+font-family: 'Inter';
+margin-right: 50px;
+}
+.MainHeader b {
+  margin-left: 60px;
+}

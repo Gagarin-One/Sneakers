@@ -1,0 +1,23 @@
+
+.ItemsWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 20px 75px 65px;
+ align-content: flex-start;
+  /* padding: 40px 20px 0 60px; */
+}
+.title{
+  top:-5px;
+  left:20px;
+  position: relative;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+  font-size: 32px;
+  color: #000000;
+  display: inline-block;
+  margin: 0 0;
+}
+.backImg{
+  margin: 44px 0 0 60px;
+}

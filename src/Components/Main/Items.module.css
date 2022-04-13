@@ -1,0 +1,75 @@
+.wrapper{
+  width: 210px;
+  height: 260px;
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  box-sizing: border-box;
+  border-radius: 40px;
+  margin-bottom: 40px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  display: inline-block;
+  margin-right: 38px;
+}
+
+.wrapper:hover{
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+}
+
+
+.title{
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+text-align: left;
+width: 150px;
+height: 34px;
+margin:0 29px 0 31px 
+}
+
+.priceTitle{
+font-weight: 500;
+font-size: 11px;
+line-height: 13px;
+text-transform: uppercase;
+color: #BDBDBD;
+margin: 14px 0 0px 30px
+
+}
+
+.wrapper b{
+  font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+margin: 2px 39px 34px 30px;
+}
+
+.itemImage{
+  
+  margin:20px 44px 14px 33px;
+  
+}
+.liked{
+  position: absolute;
+  margin:30px 0px 85px 30px;
+  cursor:pointer;
+}
+.wrapper .liked :hover{
+  border:1px solid #412b2b
+}
+
+.priceWrapper{
+  display: flex;
+  align-items: flex-start;
+
+}
+.add{
+  position: relative;
+  bottom:15px;
+  cursor:pointer
+}
+.ItemsWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
