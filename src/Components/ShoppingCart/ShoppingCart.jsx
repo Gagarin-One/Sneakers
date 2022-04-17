@@ -23,15 +23,15 @@ const ShoppingCart = (props) => {
     <div className={s.ShoppingCart}>
       <div className={s.TitleShop}>
       <p>Корзина</p>
-      <img onClick={() => closeShop()} className={s.removeItem} src='/Img/removeShopItem.svg'/>
+      <img onClick={() => closeShop()} className={s.removeItem} src='Img/removeShopItem.svg'/>
       </div>
     <div>{TrashArray.length === 0 ? 
     <div className={s.Empty}>
-    <img className={s.trash} src='/Img/trash.png'/>
+    <img className={s.trash} src='Img/trash.png'/>
     <p className={s.TitleEmpty}>Корзина пустая</p>
     <p className={s.DescriptEmpty}>Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.</p>
     <div className={s.previousButton}>
-      <img src='/Img/previousDirect.png'/>
+      <img src='Img/previousDirect.png'/>
       <p onClick={() => closeShop()}>Вернуться назад</p>
     </div>
     </div>:
@@ -39,12 +39,12 @@ const ShoppingCart = (props) => {
     <div className={s.items}>
     {TrashArray.map((item) => {
       return <div className={s.ShoppingItem}>
-      <img src={`/Img/${item.image}.png`} className={s.ItemImage}/>
+      <img src={`Img/${item.image}.png`} className={s.ItemImage}/>
       <div className={s.textWrapper}>
         <div className={s.Title}>{item.title}</div>
         <div className={s.Price} >{item.price}</div>
       </div> 
-      <img onClick={() => onShopChange(item.id)} className={s.removeItem} src='/Img/removeShopItem.svg'/>
+      <img onClick={() => onShopChange(item.id)} className={s.removeItem} src='Img/removeShopItem.svg'/>
       </div>
     })}
   </div>
@@ -61,7 +61,7 @@ const ShoppingCart = (props) => {
     </div>
     <div className={s.PlaceAnOrderButton}>
       <p>Оформить заказ</p>
-      <img src={'/Img/direct.svg'}/>
+      <img src={'Img/direct.svg'}/>
     </div>
   </div>
     

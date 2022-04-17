@@ -18,7 +18,7 @@ const App = () => {
     
   },[])
 
-  let tax = 0
+  
   const ItemCounter =()=>{ 
     let totalPrice = 0
     for (let i=0; i<TrashArray.length; i++) {
@@ -27,19 +27,20 @@ const App = () => {
     tax = Math.ceil(totalPrice* 0.05)
     return Math.ceil(totalPrice - tax)
   }
+  let tax = 0
 
   return (
     <div className={s.wholeOpacity}>
       <div className={s.fixedWrapper}>
         <div >
-          {isOpenShoppingCart && <ShoppingCart ItemCounter={ItemCounter}/>}
+          {isOpenShoppingCart && <ShoppingCart ItemCounter={ItemCounter} tax={tax}/>}
         </div>
       </div>
       <div className={s.appWindow}>
       <Header ItemCounter={ItemCounter}/>
       <Routes>
-        <Route path="/" element={<Main/>}/>
-        <Route path="/MyLikes" element={<LikesPage/>}/>{/* 
+        <Route path="/Sneakers/" element={<Main/>} />
+        <Route path="/Sneakers/MyLikes" element={<LikesPage/>} />{/* 
         <Route path="/MyTabs" element={<MyTabs/>}/>*/}
       </Routes> 
       </div>

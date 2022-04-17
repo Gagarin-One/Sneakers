@@ -20,4 +20,12 @@ font-weight: 700;
 }
 .backImg{
   margin: 44px 0 0 60px;
+  cursor: pointer;
+}
+.plsAdd{
+  margin-left:60px;
+  margin-top:30px;
+  padding-bottom:30px;
+  font-size: 22px;
+  color:#918d8d
 }

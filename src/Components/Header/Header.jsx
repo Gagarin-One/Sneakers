@@ -17,10 +17,10 @@ const Header = (props) => {
     
   return (
     <div className={s.Header}>
-      <NavLink to='/' style={{ textDecoration: 'none' }}>
+      <NavLink to='/Sneakers/' style={{ textDecoration: 'none' }}>
       <div className={s.LeftHeader}>
       
-        <img width={40} height={40} src="/Img/image 4.png"/>
+        <img width={40} height={40} src="Img/image 4.png"/>
         
         <div className={s.HeaderTitle}>
           
@@ -33,14 +33,14 @@ const Header = (props) => {
       </NavLink>
 
       <div className={s.RightHeader}>
-        <img onClick={()=>{onShoppingCartChange()}} className={s.shoppingCart} width={18} height={17} src="/Img/Shopings.svg"/>
+        <img onClick={()=>{onShoppingCartChange()}} className={s.shoppingCart} width={18} height={17} src="Img/shopings.svg"/>
         <p>{props.ItemCounter()}руб.</p>
 
-        <Link to='/MyLikes'>
-        <img className={s.liked} width={20} height={19} src="/Img/heart.png"/>
+        <Link to='/Sneakers/MyLikes'>
+          <img className={s.liked} width={20} height={19} src="Img/heart.png"/>
         </Link>
         
-        <img width={20} height={20} src="/Img/Union.svg"/>
+        <img width={20} height={20} src="Img/Union.svg"/>
       </div>
 
    </div>
